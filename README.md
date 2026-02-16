@@ -43,28 +43,21 @@ Aplikasi undangan pernikahan digital berbasis web dengan dashboard admin untuk m
 
 ### Langkah-langkah
 
-**1. Clone Repository**
-
-```bash
-git clone https://github.com/Hamdi-Yahya/Wedding-Invitation-2.git
-cd undangan-pernikahan
-```
-
-**2. Install Dependencies**
+**1. Install Dependencies**
 
 ```bash
 composer install
 npm install
 ```
 
-**3. Setup Environment**
+**2. Setup Environment**
 
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-**4. Setup Database**
+**3. Setup Database**
 
 Secara default menggunakan SQLite. Pastikan file database sudah ada:
 
@@ -73,7 +66,7 @@ touch database/database.sqlite
 php artisan migrate
 ```
 
-**5. Jalankan Server**
+**4. Jalankan Server**
 
 ```bash
 # Terminal 1: Laravel server
@@ -129,10 +122,3 @@ App\Models\Admin::create([
 └── database/
     ├── migrations/          # Database migrations
     └── database.sqlite      # Database file (SQLite)
-```
-
----
-
-## 📄 Lisensi
-
-Project ini menggunakan lisensi [MIT](https://opensource.org/licenses/MIT).
